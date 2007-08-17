@@ -41,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 /bin/open
 %{_bindir}/open
 %{_bindir}/switchto
-%{_mandir}/man1/open.1.bz2
-%{_mandir}/man1/switchto.1.bz2
+%{_mandir}/man1/open.*
+%{_mandir}/man1/switchto.*
 
 
