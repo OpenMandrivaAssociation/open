@@ -1,7 +1,7 @@
 %define	name	open
 %define	version	1.4
 %define	release	%mkrel 16
-Summary:	A tool which will start a program on a virtual console.
+Summary:	A tool which will start a program on a virtual console
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
