@@ -9,6 +9,7 @@ License:	GPL
 Group:		Terminals
 Source:		ftp://sunsite.unc.edu/pub/Linux/utils/console/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-1.4-includes.patch
+Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 The open command starts a specified command with the first available virtual
