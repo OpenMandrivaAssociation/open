@@ -25,16 +25,16 @@ Install the open package if you regularly use virtual consoles to run programs.
 %make CFLAGS="$RPM_OPT_FLAGS"
 
 %install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT/{%{_bindir},%{_mandir}/man1}
+rm -rf %{buildroot}
+mkdir -p %{buildroot}/{%{_bindir},%{_mandir}/man1}
 
-make BINDIR=$RPM_BUILD_ROOT%{_bindir} MANDIR=$RPM_BUILD_ROOT%{_mandir}/man1 install
-mkdir -p $RPM_BUILD_ROOT/bin
-mv $RPM_BUILD_ROOT%{_bindir}/open $RPM_BUILD_ROOT/bin
-ln -s /bin/open $RPM_BUILD_ROOT%{_bindir}/open
+make BINDIR=%{buildroot}%{_bindir} MANDIR=%{buildroot}%{_mandir}/man1 install
+mkdir -p %{buildroot}/bin
+mv %{buildroot}%{_bindir}/open %{buildroot}/bin
+ln -s /bin/open %{buildroot}%{_bindir}/open
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
