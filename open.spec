@@ -1,7 +1,7 @@
 Summary:	A tool which will start a program on a virtual console
 Name:		open
 Version:	1.4
-Release:	24
+Release:	25
 License:	GPLv2
 Group:		Terminals
 Source0:	ftp://sunsite.unc.edu/pub/Linux/utils/console/%{name}-%{version}.tar.bz2
