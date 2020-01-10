@@ -15,7 +15,7 @@ Install the open package if you regularly use virtual consoles to run programs.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %make CFLAGS="$RPM_OPT_FLAGS"
